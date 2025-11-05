@@ -13,7 +13,7 @@ export default function HomeSection() {
             alt="Profile"
           />
           <div className='flex flex-col gap-5'>
-            <h1 className='text-green-300 text-xl md:text-2xl font-medium mb-2 md:flex flex col'>Hello, Welcome! Testing</h1>
+            <h1 className='text-green-300 text-xl md:text-2xl font-medium mb-2 md:flex flex col'>Hello, Welcome! Testing Testing 2</h1>
             <h1 className='text-white text-4xl md:text-6xl font-bold'>
               I'm Edrick Calzar.
             </h1>
