@@ -17,10 +17,10 @@ export default function HomeSection() {
             <h1 className='text-white text-4xl md:text-6xl font-bold'>
               I'm Edrick Calzar.
             </h1>
-            <p className='text-white text-justify md:w-xl'>A 3rd-year student currently pursuing a course in Computer Science who's eager to learn and passionate about <b>Web Development</b> and <b>Digital Innovation</b>.</p>
-            <p className='md:my-2 text-white font-medium flex items-center gap-2'><MapPin size={25}/> Based in the Philippines</p>
+            <p className='text-white text-justify md:w-xl text-xl md:text-base'>A 3rd-year student currently pursuing a course in Computer Science who's eager to learn and passionate about <b>Web Development</b> and <b>Digital Innovation</b>.</p>
+            <p className='md:my-2 text-white font-medium flex items-center gap-2 text-xl md:text-base'><MapPin size={25}/> Based in the Philippines</p>
             <Link to='project' smooth={true} duration={300}>
-              <button className='text-white w-32 border border-white p-2 rounded-sm cursor-pointer hover:bg-white hover:text-black transition-colors duration-300 font-medium'>View Works</button>
+              <button className='text-white w-40 md:w-32 border border-white p-2 rounded-sm cursor-pointer hover:bg-white hover:text-black transition-colors duration-300 font-medium text-xl md:text-base'>View Works</button>
             </Link>
           </div>
           

@@ -14,10 +14,10 @@ export default function AboutSection() {
             <div className="flex flex-col gap-4 mt-36 ml-4 mb-8 md:mb-0 md:mt-20 md:ml-12">
                 <h1 className="text-white text-2xl md:text-3xl font-bold uppercase mb-2 mb:mt-40">About me</h1>
                 <div className="text-white text-justify md:w-xl flex flex-col gap-4">
-                    <p>My learning journey focuses on improving both frontend and backend development skills to build a strong understanding of how systems work together. I enjoy experimenting with design, solving coding challenges, and turning ideas into practical solutions.</p>
-                    <p>I've learned to handle tight deadlines, stay calm under pressure, and take the lead in group work. In my free time, I plan ahead by taking notes and breaking tasks into smaller goals. I also enjoy music, photography, and unwinding with video games at night.</p>
+                    <p className='text-xl md:text-base'>My learning journey focuses on improving both frontend and backend development skills to build a strong understanding of how systems work together. I enjoy experimenting with design, solving coding challenges, and turning ideas into practical solutions.</p>
+                    <p className='text-xl md:text-base'>I've learned to handle tight deadlines, stay calm under pressure, and take the lead in group work. In my free time, I plan ahead by taking notes and breaking tasks into smaller goals. I also enjoy music, photography, and unwinding with video games at night.</p>
                     <a href='/edrick-calzar-resume.pdf' download="EdrickCalzar_Resume.pdf">
-                    <button className="text-white w-44 p-2 border border-white rounded-full cursor-pointer hover:bg-white hover:text-black transition-colors duration-300 font-medium mt-2 mx-auto md:mx-0">Download Resume</button>
+                    <button className="text-xl md:text-base text-white w-56 md:w-44 p-2 border border-white rounded-full cursor-pointer hover:bg-white hover:text-black transition-colors duration-300 font-medium mt-2 mx-auto md:mx-0">Download Resume</button>
                     </a>
                 </div>               
             </div>
