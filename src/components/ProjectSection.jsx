@@ -6,7 +6,7 @@ import Car from "../assets/car.jpg"
 import Cafe from "../assets/coffee.jpg"
 import Light from "../assets/lights.jpg"
 import DeadBird from "../assets/dead_bird.jpg"
-import LandingPage from "../assets/LandingPage.png"
+import LandingPage from "../assets/landingPage.png"
 import Grid from "../assets/grid.png"
 import Project from "../assets/thirdYear_project.png"
 
