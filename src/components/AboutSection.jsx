@@ -10,51 +10,53 @@ import CssLogo from '../assets/css-3.png'
 
 export default function AboutSection() {
     return (
-        <div id="about" className="flex flex-col justify-between text-center md:text-start md:flex-row w-full h-auto md:h-screen p-8 md:p-16 items-start md:items-baseline gap-y-8 xl:gap-x-36">
+        <div id="about" className="flex flex-col justify-between text-center md:text-start md:flex-row w-full h-auto md:min-h-screen p-8 md:p-16 items-start md:items-baseline gap-y-8 xl:gap-x-36">
             <div className="flex flex-col gap-4 mt-36 ml-4 mb-8 md:mb-0 md:mt-20 md:ml-12">
                 <h1 className="text-white text-2xl md:text-3xl font-bold uppercase mb-2 mb:mt-40">About me</h1>
                 <div className="text-white text-justify md:w-xl flex flex-col gap-4">
                     <p>My learning journey focuses on improving both frontend and backend development skills to build a strong understanding of how systems work together. I enjoy experimenting with design, solving coding challenges, and turning ideas into practical solutions.</p>
                     <p>I've learned to handle tight deadlines, stay calm under pressure, and take the lead in group work. In my free time, I plan ahead by taking notes and breaking tasks into smaller goals. I also enjoy music, photography, and unwinding with video games at night.</p>
+                    <a href='/edrick-calzar-resume.pdf' download="EdrickCalzar_Resume.pdf">
                     <button className="text-white w-44 p-2 border border-white rounded-full cursor-pointer hover:bg-white hover:text-black transition-colors duration-300 font-medium mt-2 mx-auto md:mx-0">Download Resume</button>
+                    </a>
                 </div>               
             </div>
                 <div className="flex flex-col gap-4 max-w-5xl w-full">
                     <h1 className="text-white text-2xl md:text-3xl font-bold uppercase mt-24 md:mt-0">Technical Skills</h1>
                     <p className="text-white font-medium text-xl md:text-2xl">Languages</p>
-                <div className='flex flex-wrap gap-6 justify-center md:justify-start'>
-                    
-                    <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
-                        <img src={HtmlLogo} alt="html logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
-                        <p className='text-white text-center mb-2'>HTML</p>
-                    </div>
-                    
-                    <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
-                        <img src={CssLogo} alt="css logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
-                        <p className='text-white text-center mb-2'>CSS</p>
-                    </div>
-                    
-                    <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
-                        <img src={JavaScript_Logo} alt="javascript logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
-                        <p className='text-white text-center mb-2'>JavaScript</p>
+
+                    <div className='flex flex-wrap gap-6 justify-center md:justify-start'> 
+                        <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
+                            <img src={HtmlLogo} alt="html logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
+                            <p className='text-white text-center mb-2'>HTML</p>
+                        </div>
+                        
+                        <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
+                            <img src={CssLogo} alt="css logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
+                            <p className='text-white text-center mb-2'>CSS</p>
+                        </div>
+                        
+                        <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
+                            <img src={JavaScript_Logo} alt="javascript logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
+                            <p className='text-white text-center mb-2'>JavaScript</p>
+                        </div>
+
+                        <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
+                            <img src={PythonLogo} alt="python logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
+                            <p className='text-white text-center mb-2'>Python</p>
+                        </div>
+                        
+                        <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
+                            <img src={JavaLogo} alt="java logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
+                            <p className='text-white text-center mb-2'>Java</p>
+                        </div>
+                        
+                        <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
+                            <img src={MySQL_Logo} alt="python logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
+                            <p className='text-white text-center mb-2'>MySQL</p>
+                        </div>
                     </div>
 
-                    <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
-                        <img src={PythonLogo} alt="python logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
-                        <p className='text-white text-center mb-2'>Python</p>
-                    </div>
-                    
-                    <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
-                        <img src={JavaLogo} alt="java logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
-                        <p className='text-white text-center mb-2'>Java</p>
-                    </div>
-                    
-                    <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>
-                        <img src={MySQL_Logo} alt="python logo" className='w-8 h-8 md:w-8 md:h-8 mx-auto mt-3 mb-2' />
-                        <p className='text-white text-center mb-2'>MySQL</p>
-                    </div>
-                    
-                </div>
                     <p className="text-white font-medium text-xl md:text-2xl mt-8">Frameworks and Tools</p>
                     <div className='flex flex-wrap gap-6 justify-center md:justify-start'>
                         <div className='p-2 border border-white w-40 h-24 md:w-48 rounded-xl transition-transform hover:bg-[#3030305b] duration-300 ease-in-out hover:scale-110 hover:shadow-[0_4px_6px_rgba(255,255,255,0.4)]'>

@@ -20,3 +20,18 @@ body::before {
   background-color: rgba(17, 17, 17, 0.5); 
   z-index: -1;          
 }
+
+section.observed {
+  opacity: 0;
+  transition: all 1.5s ease;
+  will-change: opacity, transform;
+  scroll-margin-top: 80px; /* match your navbar height */
+}
+
+section.observed.show-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+

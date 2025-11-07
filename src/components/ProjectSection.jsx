@@ -1,9 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card"
+import { Github } from "lucide-react"
+import { ExternalLink } from 'lucide-react';
 import Bird from "../assets/bird.jpg"
 import Car from "../assets/car.jpg"
 import Cafe from "../assets/coffee.jpg"
 import Light from "../assets/lights.jpg"
 import DeadBird from "../assets/dead_bird.jpg"
+import LandingPage from "../assets/LandingPage.png"
+import Grid from "../assets/grid.png"
+import Project from "../assets/thirdYear_project.png"
 
 import {
   Carousel,
@@ -33,39 +38,80 @@ export default function ProjectSection() {
         <hr className="border-white w-14 md:w-24 my-2 md:my-4"/>
         <p className="text-white font-light w-100 md:w-full text-center mb-4">Turning designs into interactive experiences.</p>
 
-        {/* --- PROJECT CARDS --- */}
-        <div className="flex flex-col md:flex-row md:gap-x-8 md:mb-12">
-          <div className="bg-white p-4 rounded-xl">
-            <img src="https://placehold.co/275x175" className="md:rounded-md" />
-            <p className="md:mt-4 font-bold text-2xl">Project Title</p>
-            <p>Description</p>
-            <div className="flex md:gap-x-2 md:mt-6">
-              <p className="bg-gray-300 px-4 py-1 rounded-full font-medium text-sm">HTML</p>
-              <p className="bg-gray-300 px-4 py-1 rounded-full font-medium text-sm">CSS</p>
+        <div className="flex flex-col md:flex-row gap-y-8 md:gap-y-0 md:gap-x-8 md:mb-12">
+          <div className="bg-[#0b0f0f]/10 backdrop-blur-md p-4 border border-white/10 rounded-xl w-86 flex flex-col shadow-[0_4px_8px_rgba(255,255,255,0.4)] hover:shadow-[0_8px_16px_rgba(255,255,255,0.5)] transition-all duration-300 ease-in-out hover:scale-105">
+            <img src={LandingPage} className="rounded-md" />
+            <p className="text-white mt-4 font-bold text-2xl">Product Landing Page</p>
+            <p className="text-white mt-1">Landing page for a gaming brand with responsive layout.</p>
+            <div className="flex gap-x-2 mt-5 md:mt-10 cursor-default">
+              <p className="bg-gray-300 hover:bg-white/60 transition-all duration-200 ease-in-out px-4 py-1 rounded-md font-medium text-sm">HTML</p>
+              <p className="bg-gray-300 hover:bg-white/60 transition-all duration-200 ease-in-out px-4 py-1 rounded-md font-medium text-sm">CSS</p>
             </div>
-            <button className="">GitHub</button>
+            <div className="flex justify-center gap-2 mt-5 md:mt-0">
+              <a 
+                href="https://github.com/EdCalzar/calzar_finallandingpage" 
+                target="_blank" 
+                rel="noopener noreferrer">
+              <button className="flex items-center gap-2 px-5 py-2 cursor-pointer md:mt-4 rounded-full  bg-white/10 hover:bg-white/20  text-white border border-white/30 backdrop-blur-sm transition-all duration-300 ease-in-out">
+                <Github size={20} />
+                GitHub
+              </button>
+              </a>
+              <a 
+                href="https://edcalzar.github.io/calzar_finallandingpage/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+              <button className="flex items-center gap-2 px-5 py-2 cursor-pointer md:mt-4 rounded-full bg-white/10 hover:bg-white/20   text-white border border-white/30 backdrop-blur-sm transition-all duration-300 ease-in-out">
+                <ExternalLink size={20} />
+                Live Demo
+              </button>
+              </a>
+            </div>
           </div>
 
-          <div className="bg-white p-4 rounded-xl">
-            <img src="https://placehold.co/275x175" className="md:rounded-md" />
-            <p className="md:mt-4 font-bold text-2xl">Project Title</p>
-            <p>Description</p>
-            <div className="flex md:gap-x-2 md:mt-6">
-              <p className="bg-gray-300 px-4 py-1 rounded-full font-medium text-sm">HTML</p>
-              <p className="bg-gray-300 px-4 py-1 rounded-full font-medium text-sm">CSS</p>
+          <div className="bg-[#0b0f0f]/10 backdrop-blur-md p-4 border border-white/10 rounded-xl w-86 flex flex-col shadow-[0_4px_8px_rgba(255,255,255,0.4)] hover:shadow-[0_8px_16px_rgba(255,255,255,0.5)] transition-all duration-300 ease-in-out hover:scale-105">
+            <img src={Grid} className="rounded-md" />
+            <p className="mt-4 font-bold text-2xl w-86 flex flex-col text-white">Food Gallery</p>
+            <p className="mt-1 text-white">Food gallery page showcasing the use of grids.</p>
+            <div className="flex gap-x-2 mt-5 md:mt-10 cursor-default">
+              <p className="bg-gray-300 hover:bg-white/60 transition-all duration-200 ease-in-out px-4 py-1 rounded-md font-medium text-sm">HTML</p>
+              <p className="bg-gray-300 hover:bg-white/60 transition-all duration-200 ease-in-out px-4 py-1 rounded-md font-medium text-sm">CSS</p>
             </div>
-            <button className="">GitHub</button>
+            <div className="flex justify-center gap-2 mt-5 md:mt-0">
+              <a 
+                href="https://github.com/EdCalzar/calzar_edrick_Lab_Exe"
+                target="_blank" 
+                rel="noopener noreferrer">
+              <button className="flex items-center gap-2 px-5 py-2 cursor-pointer md:mt-4 rounded-full bg-white/10 hover:bg-white/20   text-white border border-white/30 backdrop-blur-sm transition-all duration-300 ease-in-out">
+                <Github size={20} />
+                GitHub
+              </button>
+              </a>
+              <a 
+                href="https://edcalzar.github.io/calzar_edrick_Lab_Exe/"
+                target="_blank" 
+                rel="noopener noreferrer">
+              <button className="flex items-center gap-2 px-5 py-2 cursor-pointer md:mt-4 rounded-full bg-white/10 hover:bg-white/20   text-white border border-white/30 backdrop-blur-sm transition-all duration-300 ease-in-out">
+                <ExternalLink size={20} />
+                Live Demo
+              </button>
+              </a>
+            </div>
           </div>
 
-          <div className="bg-white p-4 rounded-xl">
-            <img src="https://placehold.co/275x175" className="md:rounded-md" />
-            <p className="md:mt-4 font-bold text-2xl">Project Title</p>
-            <p>Description</p>
-            <div className="flex md:gap-x-2 md:mt-6">
-              <p className="bg-gray-300 px-4 py-1 rounded-full font-medium text-sm">HTML</p>
-              <p className="bg-gray-300 px-4 py-1 rounded-full font-medium text-sm">CSS</p>
+          <div className="bg-[#0b0f0f]/10 backdrop-blur-md p-4 border border-white/10 rounded-xl w-86 flex flex-col shadow-[0_4px_8px_rgba(255,255,255,0.4)] hover:shadow-[0_8px_16px_rgba(255,255,255,0.5)] transition-all duration-300 ease-in-out hover:scale-105">
+            <img src={Project} className="rounded-md" />
+            <p className="mt-4 font-bold text-2xl text-white">Her Voice, Her Safety</p>
+            <p className="mt-1 text-white">Web application empowering women to report and track harassment securely.</p>
+            <div className="flex gap-x-2 mt-5 md:mt-10 cursor-default ">
+              <p className="bg-white/80 hover:bg-white/60 transition-all duration-200 ease-in-out px-4 py-1 rounded-md font-medium text-sm">HTML</p>
+              <p className="bg-white/80 hover:bg-white/60 transition-all duration-200 ease-in-out px-4 py-1 rounded-md font-medium text-sm">CSS</p>
+              <p className="bg-white/80 hover:bg-white/60 transition-all duration-200 ease-in-out px-4 py-1 rounded-md font-medium text-sm">React</p>
+              <p className="bg-white/80 hover:bg-white/60 transition-all duration-200 ease-in-out px-4 py-1 rounded-md font-medium text-sm">API</p>
             </div>
-            <button className="">GitHub</button>
+            <div className="flex justify-center">
+              <p className="text-gray-300 font-light mt-5 italic">Note: This project is not yet deployed</p>
+            </div>
           </div>  
         </div>
 
