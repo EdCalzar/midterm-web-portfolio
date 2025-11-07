@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react"
-import Navbar from "./components/Navbar"
-import HomeSection from "./components/HomeSection"
-import AboutSection from "./components/AboutSection"
-import ProjectSection from "./components/ProjectSection"
-import ContactSection from "./components/ContactSection"
-import Footer from "./components/Footer"
+import Navbar from "./components/Navbar.jsx"
+import HomeSection from "./components/HomeSection.jsx"
+import AboutSection from "./components/AboutSection.jsx"
+import ProjectSection from "./components/ProjectSection.jsx"
+import ContactSection from "./components/ContactSection.jsx"
+import Footer from "./components/Footer.jsx"
 import "./App.css"
 
 export default function App() {
